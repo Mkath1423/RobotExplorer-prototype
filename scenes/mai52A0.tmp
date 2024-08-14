@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://tx0gntsjlo3v"]
+
+[ext_resource type="Script" path="res://scripts/resource.gd" id="1_d22rv"]
+
+[sub_resource type="GDScript" id="GDScript_glh77"]
+script/source = "extends Node
+
+var save_file_path = \"user://save_game.json\"
+
+func _ready():
+
+
+func load_game(save_data):
+	pass
+	## Load game state, e.g., player position, health, resources, etc.
+	#if not save_data.has(\"message\"):
+		#return [false, \"invalid save\"]
+		#
+	#print(save_data[\"message\"])
+	#
+	#return [true, \"loaded save successfully\"]
+
+func save_game():
+	return {\"message\": \"gello world\"}
+"
+
+[node name="main" type="Node2D"]
+script = SubResource("GDScript_glh77")
+
+[node name="terrain" type="Node" parent="."]
+
+[node name="resources" type="Node" parent="terrain"]
+
+[node name="ResourceNode" type="Node" parent="terrain/resources"]
+script = ExtResource("1_d22rv")
+
+[node name="Timer" type="Timer" parent="terrain/resources/ResourceNode"]
+wait_time = 0.111
+autostart = true
+
+[connection signal="timeout" from="terrain/resources/ResourceNode/Timer" to="terrain/resources/ResourceNode" method="_rechage"]

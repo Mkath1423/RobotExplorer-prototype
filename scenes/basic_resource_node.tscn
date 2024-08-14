@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3il4iafyrvcf"]
+
+[ext_resource type="Script" path="res://scripts/resources/resource.gd" id="1_vwclm"]
+[ext_resource type="Resource" uid="uid://c8mjvdbi0kg8x" path="res://resources/resource_types/lumber.tres" id="2_s2a7w"]
+
+[node name="ResourceNode" type="Node"]
+script = ExtResource("1_vwclm")
+resourceType = ExtResource("2_s2a7w")
+max_harvests = 20
+recharge_frequency_sec = 3.0
+recharge_amaount = 5
