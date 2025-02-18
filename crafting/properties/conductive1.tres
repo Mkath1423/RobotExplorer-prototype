@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemProperty" load_steps=2 format=3 uid="uid://carb5wka3751o"]
+
+[ext_resource type="Script" path="res://scripts/items/item_property.gd" id="1_jk2tn"]
+
+[resource]
+script = ExtResource("1_jk2tn")
+id = "conductive"
+name = "Conductive I"
+description = "This material can conduct electricity."
+level = 1

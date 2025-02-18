@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://jvdnnqxfji37"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sxe6h"]
+
+[node name="main" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 0, 0)
+mesh = SubResource("PlaneMesh_sxe6h")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 39.4351, 53.8985)
+projection = 1
+size = 12.667
+near = 0.015
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 39.4351, 53.8985)

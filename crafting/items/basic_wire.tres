@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://pvmh5qbmkeay"]
+
+[ext_resource type="Resource" uid="uid://carb5wka3751o" path="res://crafting/properties/conductive1.tres" id="1_6whcr"]
+[ext_resource type="Script" path="res://scripts/items/item.gd" id="1_8se33"]
+
+[resource]
+script = ExtResource("1_8se33")
+id = "basic_wire"
+name = "Basic Wire"
+description = "A crude wire sutable for basic circuits."
+properties = Array[Resource("res://scripts/items/item_property.gd")]([ExtResource("1_6whcr")])
