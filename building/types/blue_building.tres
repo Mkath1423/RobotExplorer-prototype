@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BuildingType" load_steps=3 format=3 uid="uid://mpk0k8gwiodq"]
+
+[ext_resource type="PackedScene" uid="uid://byr5quy4ru6x1" path="res://building/scenes/blue_building.tscn" id="1_n54eq"]
+[ext_resource type="Script" path="res://scripts/building/building_type.gd" id="2_k3gl2"]
+
+[resource]
+script = ExtResource("2_k3gl2")
+ghost = ExtResource("1_n54eq")
+template = ExtResource("1_n54eq")

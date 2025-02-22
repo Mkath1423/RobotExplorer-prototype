@@ -1,0 +1,20 @@
+[gd_resource type="StyleBoxFlat" format=3 uid="uid://bgfd7jmw3w2g3"]
+
+[resource]
+content_margin_left = 7.0
+content_margin_top = 3.0
+content_margin_right = 7.0
+content_margin_bottom = 8.0
+bg_color = Color(0.41, 0.832833, 1, 0.45098)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.32, 0.898, 1, 0.74902)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+shadow_color = Color(0.44, 0.953333, 1, 0.372549)
+shadow_size = 2

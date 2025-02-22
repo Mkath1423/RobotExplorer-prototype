@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://d03xsgp8ysc0k"]
+
+[ext_resource type="Theme" uid="uid://bjyevkmp5eb4w" path="res://ui/themes/basic/base_ui.tres" id="1_3x8n5"]
+
+[node name="Main Menu" type="CenterContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -71.0
+offset_right = 60.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 2
+theme = ExtResource("1_3x8n5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Game Paused"
+
+[node name="Button4" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_3x8n5")
+theme_type_variation = &"FlatButton"
+text = "Save
+"
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Settings
+"
+
+[node name="Button3" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Continue
+"
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Quit to Title"

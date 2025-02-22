@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc683fv7xk5dk"]
+
+[ext_resource type="Texture2D" uid="uid://cognnicc1h4tp" path="res://icon.svg" id="1_63ext"]
+
+[node name="WhiteBuilding" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+texture = ExtResource("1_63ext")
+region_enabled = true
+region_rect = Rect2(63.7156, 68.4246, 1.18498, 1.71165)

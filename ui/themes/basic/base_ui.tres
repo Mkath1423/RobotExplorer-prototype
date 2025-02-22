@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bjyevkmp5eb4w"]
+
+[ext_resource type="StyleBox" uid="uid://bakq8fcbcpprm" path="res://ui/themes/basic/button.tres" id="1_jfism"]
+[ext_resource type="StyleBox" uid="uid://bgfd7jmw3w2g3" path="res://ui/themes/basic/panel_container.tres" id="2_5siy7"]
+
+[resource]
+Button/styles/normal = ExtResource("1_jfism")
+PanelContainer/styles/panel = ExtResource("2_5siy7")
