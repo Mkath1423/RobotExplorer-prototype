@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1ebmlsvu1du7"]
+
+[ext_resource type="Script" path="res://ui/scripts/elements/building_hotbar.gd" id="1_cra77"]
+[ext_resource type="Texture2D" uid="uid://cognnicc1h4tp" path="res://icon.svg" id="2_5pi07"]
+[ext_resource type="Resource" uid="uid://ce8keemhjuiji" path="res://ui/resources/building_hotbar/placeholder_layout.tres" id="2_dxp04"]
+[ext_resource type="PackedScene" uid="uid://bag0580lth02t" path="res://ui/scenes/building_hotbar_row.tscn" id="3_t33xg"]
+[ext_resource type="Resource" uid="uid://d12y1mii707ty" path="res://global_references/selected_building.tres" id="4_yhxtv"]
+
+[node name="BuildingHotbar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cra77")
+layout = ExtResource("2_dxp04")
+row = ExtResource("3_t33xg")
+selected_building = ExtResource("4_yhxtv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -49.0
+offset_top = -108.0
+offset_right = 49.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 0
+
+[node name="ItemList" type="ItemList" parent="VBoxContainer"]
+layout_mode = 2
+item_count = 1
+item_0/text = "hello"
+item_0/icon = ExtResource("2_5pi07")
+
+[node name="tablist" type="HBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="starting offset" type="VBoxContainer" parent="VBoxContainer/tablist"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="HotBar" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HotBar"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="rows_container" type="CenterContainer" parent="VBoxContainer/HotBar/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BuildingHotBarItemFactory" load_steps=5 format=3 uid="uid://eplqepqsf11v"]
+
+[ext_resource type="Script" path="res://ui/scripts/elements/building_hotbar_item_factory.gd" id="1_hf841"]
+[ext_resource type="Resource" uid="uid://mpk0k8gwiodq" path="res://building/types/blue_building.tres" id="1_th6uf"]
+[ext_resource type="Texture2D" uid="uid://cognnicc1h4tp" path="res://icon.svg" id="2_428ep"]
+[ext_resource type="PackedScene" uid="uid://dprasotlxrch6" path="res://ui/scenes/building_hotbar_item.tscn" id="2_jvorg"]
+
+[resource]
+script = ExtResource("1_hf841")
+building_type = ExtResource("1_th6uf")
+icon_image = ExtResource("2_428ep")
+scene = ExtResource("2_jvorg")

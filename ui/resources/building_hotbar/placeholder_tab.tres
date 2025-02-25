@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BuildingHotBarTabFactory" load_steps=4 format=3 uid="uid://evyb0anll0un"]
+
+[ext_resource type="Texture2D" uid="uid://cognnicc1h4tp" path="res://icon.svg" id="1_7phv6"]
+[ext_resource type="PackedScene" uid="uid://bjqaonsty6t5e" path="res://ui/scenes/building_hotbar_tab.tscn" id="2_ji8p7"]
+[ext_resource type="Script" path="res://ui/scripts/elements/building_hotbar_tab_factory.gd" id="3_52hrc"]
+
+[resource]
+script = ExtResource("3_52hrc")
+label_text = "Placeholder"
+icon_image = ExtResource("1_7phv6")
+scene = ExtResource("2_ji8p7")

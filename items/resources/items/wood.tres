@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" load_steps=8 format=3 uid="uid://dtllb1dxhcjsn"]
+
+[ext_resource type="Resource" uid="uid://s6q0acvkowu7" path="res://items/resources/item_types/wood.tres" id="1_gptaw"]
+[ext_resource type="Script" path="res://items/scripts/items/properties/item_property.gd" id="1_jly48"]
+[ext_resource type="Resource" uid="uid://bcmyi4tdm8fdu" path="res://items/resources/item_properties/sturdy_1.tres" id="2_2f8px"]
+[ext_resource type="Resource" uid="uid://ccok1glgy4hhq" path="res://items/resources/item_property_types/combustible.tres" id="3_80dxo"]
+[ext_resource type="Script" path="res://items/scripts/items/properties/combustable_property.gd" id="4_th2bj"]
+[ext_resource type="Script" path="res://items/scripts/items/item.gd" id="5_mxuy8"]
+
+[sub_resource type="Resource" id="Resource_yb62s"]
+script = ExtResource("4_th2bj")
+energy = 1000
+id = ExtResource("3_80dxo")
+name = ""
+description = ""
+
+[resource]
+script = ExtResource("5_mxuy8")
+id = ExtResource("1_gptaw")
+name = "Wood"
+description = "Wood"
+properties = Array[ExtResource("1_jly48")]([ExtResource("2_2f8px"), SubResource("Resource_yb62s")])

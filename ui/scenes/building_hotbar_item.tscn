@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dprasotlxrch6"]
+
+[ext_resource type="Texture2D" uid="uid://cognnicc1h4tp" path="res://icon.svg" id="1_84cfb"]
+[ext_resource type="Script" path="res://ui/scripts/elements/building_hotbar_item.gd" id="1_vctg2"]
+
+[node name="item" type="PanelContainer"]
+custom_minimum_size = Vector2(75, 75)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_vctg2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="icon" type="TextureRect" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("1_84cfb")
+expand_mode = 1

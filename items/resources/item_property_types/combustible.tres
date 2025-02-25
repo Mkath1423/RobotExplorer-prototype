@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ItemPropertyId" load_steps=2 format=3 uid="uid://ccok1glgy4hhq"]
+
+[ext_resource type="Script" path="res://items/scripts/items/properties/item_property_id.gd" id="1_kb0yn"]
+
+[resource]
+script = ExtResource("1_kb0yn")
+name = "combustible"

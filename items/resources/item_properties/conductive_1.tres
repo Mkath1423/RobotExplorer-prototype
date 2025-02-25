@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TieredProperty" load_steps=3 format=3 uid="uid://c2botbwysvj81"]
+
+[ext_resource type="Resource" uid="uid://xdu004c4ab3s" path="res://items/resources/item_property_types/conductive.tres" id="1_ca22p"]
+[ext_resource type="Script" path="res://items/scripts/items/properties/tiered_property.gd" id="2_xdqiv"]
+
+[resource]
+script = ExtResource("2_xdqiv")
+level = 1
+id = ExtResource("1_ca22p")
+name = "Conductive I"
+description = "Conductive I"

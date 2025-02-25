@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjqaonsty6t5e"]
+
+[ext_resource type="Script" path="res://ui/scripts/elements/building_hotbar_tab.gd" id="1_egs0y"]
+[ext_resource type="Texture2D" uid="uid://cognnicc1h4tp" path="res://icon.svg" id="1_w7vv6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rn0wo"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_detail = 10
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_msk82"]
+resource_local_to_scene = true
+resource_name = "what do"
+
+[node name="tab" type="PanelContainer"]
+custom_minimum_size = Vector2(75, 0)
+theme_override_styles/panel = SubResource("StyleBoxFlat_rn0wo")
+script = ExtResource("1_egs0y")
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="MarginContainer2/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_w7vv6")
+expand_mode = 1
+flip_h = true
+
+[node name="label" type="RichTextLabel" parent="MarginContainer2/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.879103, 0.879531, 0.905944, 1)
+theme_override_font_sizes/normal_font_size = 15
+text = "Base"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+custom_effects = [SubResource("RichTextEffect_msk82")]

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="BuildingHotBarRowLayout" load_steps=9 format=3 uid="uid://ck2bmc2b5k4h3"]
+
+[ext_resource type="Script" path="res://ui/scripts/layout/building_hotbar_row_layout.gd" id="1_gp0rv"]
+[ext_resource type="Script" path="res://ui/scripts/elements/building_hotbar_item_factory.gd" id="1_u1gkn"]
+[ext_resource type="Resource" uid="uid://cpayxbm3601mk" path="res://building/types/white_building.tres" id="2_gwjtc"]
+[ext_resource type="Texture2D" uid="uid://cognnicc1h4tp" path="res://icon.svg" id="3_54poq"]
+[ext_resource type="PackedScene" uid="uid://dprasotlxrch6" path="res://ui/scenes/building_hotbar_item.tscn" id="3_ym7yt"]
+[ext_resource type="Resource" uid="uid://eplqepqsf11v" path="res://ui/resources/building_hotbar/placeholder_item.tres" id="4_6m5al"]
+[ext_resource type="Resource" uid="uid://evyb0anll0un" path="res://ui/resources/building_hotbar/placeholder_tab.tres" id="6_kkrwf"]
+
+[sub_resource type="Resource" id="Resource_rrasv"]
+script = ExtResource("1_u1gkn")
+building_type = ExtResource("2_gwjtc")
+icon_image = ExtResource("3_54poq")
+scene = ExtResource("3_ym7yt")
+
+[resource]
+script = ExtResource("1_gp0rv")
+tab = ExtResource("6_kkrwf")
+items = Array[ExtResource("1_u1gkn")]([SubResource("Resource_rrasv"), ExtResource("4_6m5al"), ExtResource("4_6m5al"), ExtResource("4_6m5al"), ExtResource("4_6m5al"), ExtResource("4_6m5al"), ExtResource("4_6m5al"), ExtResource("4_6m5al"), ExtResource("4_6m5al")])

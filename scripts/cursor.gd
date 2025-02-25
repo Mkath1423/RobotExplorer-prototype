@@ -14,7 +14,6 @@ func get_3d_cursor_location():
 	var intersection = level_plane.intersects_ray(ray_origin, ray_direction)
 	
 	if intersection != null:
-		print("Mouse 3D Position:", intersection)
 		return intersection
 		
 	else:
@@ -22,7 +21,6 @@ func get_3d_cursor_location():
 
 	
 func _process(delta):
-	$pick_point.global_position = Vector3(get_viewport().get_mouse_position().x, 2, get_viewport().get_mouse_position().y)
 	$pick_point.global_position = get_3d_cursor_location()
 
 func enter_build_mode():

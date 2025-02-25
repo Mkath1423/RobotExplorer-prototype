@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ItemPropertyId" load_steps=2 format=3 uid="uid://d0djmehfhpe4c"]
+
+[ext_resource type="Script" path="res://items/scripts/items/properties/item_property_id.gd" id="1_ov2nq"]
+
+[resource]
+script = ExtResource("1_ov2nq")
+name = "metallic"

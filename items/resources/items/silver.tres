@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item" load_steps=6 format=3 uid="uid://di76mqaydh365"]
+
+[ext_resource type="Resource" uid="uid://q07a4682vg0" path="res://items/resources/item_types/silver.tres" id="1_u68io"]
+[ext_resource type="Script" path="res://items/scripts/items/properties/item_property.gd" id="1_vcwr2"]
+[ext_resource type="Resource" uid="uid://c2botbwysvj81" path="res://items/resources/item_properties/conductive_1.tres" id="2_tgrkt"]
+[ext_resource type="Resource" uid="uid://civsedue3of2h" path="res://items/resources/item_properties/metallic.tres" id="3_ha5df"]
+[ext_resource type="Script" path="res://items/scripts/items/item.gd" id="4_fpmpo"]
+
+[resource]
+script = ExtResource("4_fpmpo")
+id = ExtResource("1_u68io")
+name = "Copper"
+description = "Copper"
+properties = Array[ExtResource("1_vcwr2")]([ExtResource("2_tgrkt"), ExtResource("3_ha5df")])

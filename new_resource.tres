@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PropertyTierCondition" load_steps=2 format=3 uid="uid://dnkvqk4imj3dp"]
+
+[ext_resource type="Script" path="res://items/scripts/recipes/condition/property_tier_condition.gd" id="1_s2e4y"]
+
+[resource]
+script = ExtResource("1_s2e4y")
+level = 0
+mode = 1

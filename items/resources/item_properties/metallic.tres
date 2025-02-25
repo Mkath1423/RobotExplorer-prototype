@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemProperty" load_steps=3 format=3 uid="uid://civsedue3of2h"]
+
+[ext_resource type="Script" path="res://items/scripts/items/properties/item_property.gd" id="1_4xs7b"]
+[ext_resource type="Resource" uid="uid://d0djmehfhpe4c" path="res://items/resources/item_property_types/metallic.tres" id="1_5guik"]
+
+[resource]
+script = ExtResource("1_4xs7b")
+id = ExtResource("1_5guik")
+name = "Metallic"
+description = "Metallic"
